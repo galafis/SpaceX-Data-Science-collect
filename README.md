@@ -1,4 +1,4 @@
-# SpaceX Launch Analysis & Presentation Automation
+# SpaceX Launch Analysis & Presentation
 
 **Author:** Gabriel Demetrios Lafis
 **Date:** May 2, 2025
