@@ -136,22 +136,22 @@ slide_content_en = [
 appendix_charts = [
     {
         "title": "Appendix: Rocket Configurations Over Time",
-        "image_path": "/home/ubuntu/rocket_configurations_chart_en.png",
+        "image_path": "rocket_configurations_chart_en.png",
         "caption": "Evolution of Falcon 9 versions and Falcon Heavy launches by year. Source: Wikipedia"
     },
     {
         "title": "Appendix: Launch Sites Usage",
-        "image_path": "/home/ubuntu/launch_sites_chart_en.png",
+        "image_path": "launch_sites_chart_en.png",
         "caption": "Number of launches per site (Cape Canaveral SLC-40, Kennedy LC-39A, Vandenberg SLC-4E) by year. Source: Wikipedia"
     },
     {
         "title": "Appendix: Launch Outcomes Breakdown",
-        "image_path": "/home/ubuntu/launch_outcomes_chart_en.png",
+        "image_path": "launch_outcomes_chart_en.png",
         "caption": "Breakdown of launch outcomes (Success, Failure, Planned) by year. Source: Wikipedia"
     },
     {
         "title": "Appendix: Booster Landing Attempts",
-        "image_path": "/home/ubuntu/booster_landings_chart_en.png",
+        "image_path": "booster_landings_chart_en.png",
         "caption": "Number of successful booster landings versus attempts by year. Source: Wikipedia"
     }
 ]
