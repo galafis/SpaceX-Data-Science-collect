@@ -1,35 +1,24 @@
 # pyright: reportMissingImports=false
 
 import sys
+import os
+from pathlib import Path
 
-sys.path.append("/opt/.manus/.sandbox-runtime")
 from pptx import Presentation
 from pptx.util import Inches, Pt
-from pptx.enum.text import (
-    MSO_ANCHOR,
-    PP_ALIGN,
-)  # Needed for potential future formatting
-import importlib.util
+from pptx.enum.text import PP_ALIGN
 
 # --- Import slide content from the external file ---
-try:
-    spec = importlib.util.spec_from_file_location(
-        "slide_content_module", "/home/ubuntu/slide_content_en.py"
-    )
-    if spec is None or spec.loader is None:
-        raise ImportError("Unable to load /home/ubuntu/slide_content_en.py")
-    slide_content_module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(slide_content_module)
-    slide_content_en = slide_content_module.slide_content_en
-    print("Successfully imported English slide content.")
-except Exception as e:
-    print(f"Error importing slide content: {e}")
-    sys.exit(1)  # Exit if content cannot be loaded
+# Use relative path based on this script's location
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+sys.path.insert(0, str(SCRIPT_DIR))
+from slide_content_en import slide_content_en
 
 # --- Paths ---
-template_path = "/home/ubuntu/upload/ds-capstone-template-coursera.pptx"
-output_path = "/home/ubuntu/spacex_presentation_draft_en.pptx"  # Intermediate file
-author_name = "Gabriel Demetrios Lafis"  # As requested by user
+template_path = str(SCRIPT_DIR / "ds-capstone-template-coursera.pptx")
+output_path = str(SCRIPT_DIR / "spacex_presentation_draft_en.pptx")
+author_name = "Gabriel Demetrios Lafis"
 
 
 # --- Helper function to find placeholders ---
