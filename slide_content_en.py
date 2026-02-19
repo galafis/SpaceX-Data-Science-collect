@@ -156,6 +156,7 @@ appendix_charts = [
     }
 ]
 
-print("Slide content and appendix chart info defined in English.")
 
+if __name__ == '__main__':
+    print("Slide content and appendix chart info defined in English.")
 
