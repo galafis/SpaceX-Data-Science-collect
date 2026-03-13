@@ -5,6 +5,7 @@ Conjunto de scripts Python que geram programaticamente uma apresentacao PowerPoi
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB.svg)](https://python.org)
 [![python-pptx](https://img.shields.io/badge/python--pptx-0.6.21+-orange.svg)](https://python-pptx.readthedocs.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 [English](#english)
 
